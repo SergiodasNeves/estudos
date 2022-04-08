@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 450px;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgreen;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgrey;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>0000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatem quo ipsa dolorem ducimus consequatur, tempora quasi accusamus facilis at illo repellendus harum, provident molestiae voluptate delectus. Quae, rem vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat libero aperiam qui et eum magnam sunt iure obcaecati? Libero alias delectus voluptas cupiditate odio optio nulla est, dolore illo possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iste quo odio, tempora sapiente molestiae atque reiciendis dolores voluptatum architecto assumenda ratione, sunt, dolore culpa eveniet quibusdam neque officiis aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur iusto fugit accusantium nemo. Inventore in atque fugiat dolores, deserunt mollitia fugit, ducimus saepe animi laudantium ratione iste unde veniam.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatem quo ipsa dolorem ducimus consequatur, tempora quasi accusamus facilis at illo repellendus harum, provident molestiae voluptate delectus. Quae, rem vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat libero aperiam qui et eum magnam sunt iure obcaecati? Libero alias delectus voluptas cupiditate odio optio nulla est, dolore illo possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iste quo odio, tempora sapiente molestiae atque reiciendis dolores voluptatum architecto assumenda ratione, sunt, dolore culpa eveniet quibusdam neque officiis aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur iusto fugit accusantium nemo. Inventore in atque fugiat dolores, deserunt mollitia fugit, ducimus saepe animi laudantium ratione iste unde veniam.</p>  
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatem quo ipsa dolorem ducimus consequatur, tempora quasi accusamus facilis at illo repellendus harum, provident molestiae voluptate delectus. Quae, rem vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat libero aperiam qui et eum magnam sunt iure obcaecati? Libero alias delectus voluptas cupiditate odio optio nulla est, dolore illo possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iste quo odio, tempora sapiente molestiae atque reiciendis dolores voluptatum architecto assumenda ratione, sunt, dolore culpa eveniet quibusdam neque officiis aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur iusto fugit accusantium nemo. Inventore in atque fugiat dolores, deserunt mollitia fugit, ducimus saepe animi laudantium ratione iste unde veniam.</p>  
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatem quo ipsa dolorem ducimus consequatur, tempora quasi accusamus facilis at illo repellendus harum, provident molestiae voluptate delectus. Quae, rem vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat libero aperiam qui et eum magnam sunt iure obcaecati? Libero alias delectus voluptas cupiditate odio optio nulla est, dolore illo possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iste quo odio, tempora sapiente molestiae atque reiciendis dolores voluptatum architecto assumenda ratione, sunt, dolore culpa eveniet quibusdam neque officiis aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur iusto fugit accusantium nemo. Inventore in atque fugiat dolores, deserunt mollitia fugit, ducimus saepe animi laudantium ratione iste unde veniam.</p>  
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatem quo ipsa dolorem ducimus consequatur, tempora quasi accusamus facilis at illo repellendus harum, provident molestiae voluptate delectus. Quae, rem vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat libero aperiam qui et eum magnam sunt iure obcaecati? Libero alias delectus voluptas cupiditate odio optio nulla est, dolore illo possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iste quo odio, tempora sapiente molestiae atque reiciendis dolores voluptatum architecto assumenda ratione, sunt, dolore culpa eveniet quibusdam neque officiis aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur iusto fugit accusantium nemo. Inventore in atque fugiat dolores, deserunt mollitia fugit, ducimus saepe animi laudantium ratione iste unde veniam.</p>  
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam voluptatem quo ipsa dolorem ducimus consequatur, tempora quasi accusamus facilis at illo repellendus harum, provident molestiae voluptate delectus. Quae, rem vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat libero aperiam qui et eum magnam sunt iure obcaecati? Libero alias delectus voluptas cupiditate odio optio nulla est, dolore illo possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iste quo odio, tempora sapiente molestiae atque reiciendis dolores voluptatum architecto assumenda ratione, sunt, dolore culpa eveniet quibusdam neque officiis aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aspernatur iusto fugit accusantium nemo. Inventore in atque fugiat dolores, deserunt mollitia fugit, ducimus saepe animi laudantium ratione iste unde veniam.</p>  
+
+</body>
+</html>
